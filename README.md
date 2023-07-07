@@ -15,6 +15,12 @@
 
 the project to write mobile application. It working with back-end [social-web-php](https://github.com/Arikato111/social-web-php)
 
+## Release
+
+- you can find releases of this project at [here](https://github.com/Arikato111/social-web-flutter/releases)
+
+- and if you want to try this app in your android phone, you can find `apk` to download at [release](https://github.com/Arikato111/social-web-flutter/releases)
+
 ## Get started
 
 - clone this repository.
