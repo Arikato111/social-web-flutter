@@ -1,16 +1,38 @@
-# flutterapp
+<p align="center">
+    <img width="40" height="30" alt="flutter" src="https://github.com/Arikato111/Arikato111/raw/main/icons/flutter-original.svg" />
+</p>
 
-A new Flutter project.
+# <p align="center">Social web Flutter</p>
 
-## Getting Started
+<p align="center">
+    <img alt="Github License" src="https://img.shields.io/github/license/Arikato111/social-web-flutter" />
+    <img alt="GitHub Issues" src="https://img.shields.io/github/issues/Arikato111/social-web-flutter" />
+    <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/Arikato111/social-web-flutter" />
+    <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/Arikato111/social-web-flutter" />
+    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/Arikato111/social-web-flutter" />
+    <img alt="" src="https://img.shields.io/github/repo-size/Arikato111/social-web-flutter" />
+</p>
 
-This project is a starting point for a Flutter application.
+the project to write mobile application. It working with back-end [social-web-php](https://github.com/Arikato111/social-web-php)
 
-A few resources to get you started if this is your first Flutter project:
+## Get started
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- clone this repository.
+- `flutter run` to run this project to emulator.
+- or <kbd>F5</kbd> on vscode to `run and debug`
+- and get edit by `./lib/main.dart`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Inside it
+
+- Flutter
+- http
+
+## Neet to know
+
+- this project is just mobile front-end , it have get data by request api from website.
+
+## TODOs
+
+- [x] explore page
+- [ ] people page
+- [ ] search 
