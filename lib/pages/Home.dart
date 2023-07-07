@@ -3,6 +3,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import '../components/PostDisplay.dart';
 import '../components/LoadingState.dart';
+import '../components/topBar.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -46,17 +47,12 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-            backgroundColor: Colors.white,
-            title: Text(
-              "aden",
-              style: TextStyle(color: Colors.blue),
-            )),
+        appBar: topBar(context),
         body: Container(
           color: const Color(0xf2f2f2),
           child: SingleChildScrollView(
               // check loading state
-              child: isLoading < 1 || true
+              child: isLoading < 1
                   ? LoadingState(
                       fetchApi: fetchApi,
                       isLoading: isLoading,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/components/topBar.dart';
 
 class About extends StatefulWidget {
   const About({super.key});
@@ -11,10 +12,25 @@ class _AboutState extends State<About> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("aden"),
-      ),
-      body: const Text("Hello World"),
-    );
+        appBar: topBar(context),
+        body: Container(
+          margin: const EdgeInsets.all(10),
+          alignment: Alignment.center,
+          child: Column(children: [
+            Text(
+              "About page",
+              style: TextStyle(fontSize: 32),
+            ),
+            TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/');
+                  // Navigator.pop(context);
+                },
+                child: Text(
+                  'Home',
+                  style: TextStyle(fontSize: 18),
+                ))
+          ]),
+        ));
   }
 }
