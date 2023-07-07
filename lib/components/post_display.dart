@@ -10,16 +10,19 @@ class PostDisplay extends StatefulWidget {
 }
 
 class _PostDisplayState extends State<PostDisplay> {
-  List<Widget> Content = [];
+  List<Widget> content = [];
   @override
   Widget build(BuildContext context) {
     for (var i = 0; i < widget.data.length; i++) {
       Map usr = widget.users[widget.users.indexWhere((element) =>
           element["usr_username"] == widget.data[i]["usr_username"])];
-      Content.add(BlockPost(item: widget.data[i], user: usr));
+      content.add(BlockPost(item: widget.data[i], user: usr));
     }
-    return Column(
-      children: Content,
+    return Container(
+      padding: const EdgeInsets.only(top: 10, bottom: 10),
+      child: Column(
+        children: content,
+      ),
     );
   }
 }
@@ -36,8 +39,9 @@ class _BlockPostState extends State<BlockPost> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.only(top: 10, left: 10, right: 10),
-        padding: EdgeInsets.only(top: 10, bottom: 10, right: 15, left: 15),
+        margin: const EdgeInsets.only(top: 10, bottom: 10, left: 10, right: 10),
+        padding:
+            const EdgeInsets.only(top: 10, bottom: 10, right: 15, left: 15),
         decoration: BoxDecoration(
             boxShadow: [
               BoxShadow(
@@ -57,7 +61,7 @@ class _BlockPostState extends State<BlockPost> {
                 child: Row(
                   children: [
                     Container(
-                      margin: EdgeInsets.only(right: 10),
+                      margin: const EdgeInsets.only(right: 10),
                       child: CircleAvatar(
                         radius: 18,
                         backgroundImage: NetworkImage(
@@ -68,14 +72,14 @@ class _BlockPostState extends State<BlockPost> {
                   ],
                 )),
             Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: Text(
                 widget.item["post_detail"],
                 style: const TextStyle(fontSize: 14),
               ),
             ),
             ClipRRect(
-              borderRadius: BorderRadius.all(Radius.circular(3)),
+              borderRadius: const BorderRadius.all(Radius.circular(3)),
               child: Image.network(
                   "https://aden.anytion.com/public/posts/${widget.item["post_img"]}"),
             )

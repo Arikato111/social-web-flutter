@@ -44,14 +44,13 @@ class _LoadingStateState extends State<LoadingState> {
             onPressed: () {
               if (widget.isLoading == -1) widget.fetchApi();
             },
-            child: Text("Refresh")),
+            child: const Text("Refresh")),
         TextButton(
             onPressed: () {
               Navigator.pushNamed(context, '/about');
             },
-            child: Text("Detail"))
+            child: const Text("Detail"))
       ],
     );
-    ;
   }
 }

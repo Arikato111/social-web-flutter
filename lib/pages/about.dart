@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapp/components/topBar.dart';
+import 'package:flutterapp/components/top_bar.dart';
 
 class About extends StatefulWidget {
   const About({super.key});
@@ -17,7 +17,7 @@ class _AboutState extends State<About> {
           margin: const EdgeInsets.all(10),
           alignment: Alignment.center,
           child: Column(children: [
-            Text(
+            const Text(
               "About page",
               style: TextStyle(fontSize: 32),
             ),
@@ -26,7 +26,7 @@ class _AboutState extends State<About> {
                   Navigator.pushNamed(context, '/');
                   // Navigator.pop(context);
                 },
-                child: Text(
+                child: const Text(
                   'Home',
                   style: TextStyle(fontSize: 18),
                 ))

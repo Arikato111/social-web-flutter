@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import '../components/PostDisplay.dart';
-import '../components/LoadingState.dart';
-import '../components/topBar.dart';
+import '../components/post_display.dart';
+import '../components/loading_state.dart';
+import '../components/top_bar.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -26,11 +26,11 @@ class _HomeState extends State<Home> {
     setState(() {
       isLoading = 0;
     });
-    String post_url = "https://aden.anytion.com/api/explore";
-    String users_url = "https://aden.anytion.com/api/users";
+    String postUrl = "https://aden.anytion.com/api/explore";
+    String usersUrl = "https://aden.anytion.com/api/users";
     try {
-      http.Response postResponse = await http.get(Uri.parse(post_url));
-      http.Response usersResponse = await http.get(Uri.parse(users_url));
+      http.Response postResponse = await http.get(Uri.parse(postUrl));
+      http.Response usersResponse = await http.get(Uri.parse(usersUrl));
       setState(() {
         data = jsonDecode(postResponse.body);
         users = jsonDecode(usersResponse.body);
@@ -49,7 +49,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
         appBar: topBar(context),
         body: Container(
-          color: const Color(0xf2f2f2),
+          color: const Color(0xF2F2F2F2),
           child: SingleChildScrollView(
               // check loading state
               child: isLoading < 1

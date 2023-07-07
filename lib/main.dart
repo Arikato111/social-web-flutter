@@ -1,7 +1,5 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import './pages/Home.dart';
+import 'pages/home.dart';
 import './pages/about.dart';
 
 void main() {
@@ -16,7 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       // home: Home(),
-      routes: {"/about": (context) => About(), "/": (context) => Home()},
+      routes: {
+        "/about": (context) => const About(),
+        "/": (context) => const Home()
+      },
     );
   }
 }
