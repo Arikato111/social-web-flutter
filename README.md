@@ -33,7 +33,7 @@ the project to write mobile application. It working with back-end [social-web-ph
 - Flutter
 - http
 
-## Neet to know
+## Need to know
 
 - this project is just mobile front-end , it have get data by request api from website.
 
