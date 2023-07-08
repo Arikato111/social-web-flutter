@@ -14,14 +14,6 @@ AppBar topBar(context) {
                 "aden",
                 style: TextStyle(color: Colors.blue),
               )),
-          TextButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/about');
-              },
-              child: const Text(
-                "about",
-                style: TextStyle(color: Colors.black54),
-              ))
         ],
       ));
 }

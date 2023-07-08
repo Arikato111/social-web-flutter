@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import '../components/post_display.dart';
 import '../components/loading_state.dart';
-import '../components/top_bar.dart';
+
+import '../components/post_display.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -46,21 +46,19 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: topBar(context),
-        body: Container(
-          color: const Color(0xF2F2F2F2),
-          child: SingleChildScrollView(
-              // check loading state
-              child: isLoading < 1
-                  ? LoadingState(
-                      fetchApi: fetchApi,
-                      isLoading: isLoading,
-                    )
-                  : PostDisplay(
-                      data: data,
-                      users: users,
-                    )),
-        ));
+    return Container(
+        // color: Colors.white,
+        color: const Color(0xF2F0F2F0),
+        child: SingleChildScrollView(
+            // check loading state
+            child: isLoading < 1
+                ? LoadingState(
+                    fetchApi: fetchApi,
+                    isLoading: isLoading,
+                  )
+                : PostDisplay(
+                    data: data,
+                    users: users,
+                  )));
   }
 }

@@ -41,11 +41,11 @@ class _BlockPostState extends State<BlockPost> {
     return Container(
         margin: const EdgeInsets.only(top: 10, bottom: 10, left: 10, right: 10),
         padding:
-            const EdgeInsets.only(top: 10, bottom: 10, right: 15, left: 15),
+            const EdgeInsets.only(top: 13, bottom: 15, right: 15, left: 15),
         decoration: BoxDecoration(
             boxShadow: [
               BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
+                  color: Colors.grey.withOpacity(0.2),
                   spreadRadius: 5,
                   blurRadius: 7,
                   offset: const Offset(0, 3))
