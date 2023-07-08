@@ -32,6 +32,7 @@ the project to write mobile application. It working with back-end [social-web-ph
 
 - Flutter
 - http
+- cupertino_icons
 
 ## Need to know
 
@@ -39,6 +40,7 @@ the project to write mobile application. It working with back-end [social-web-ph
 
 ## TODOs
 
-- [x] explore page
+- [x] home page
+- [ ] explore page
 - [ ] people page
-- [ ] search 
+- [ ] search page
