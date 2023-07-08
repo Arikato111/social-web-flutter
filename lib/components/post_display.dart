@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class PostDisplay extends StatefulWidget {
@@ -40,8 +41,7 @@ class _BlockPostState extends State<BlockPost> {
   Widget build(BuildContext context) {
     return Container(
         margin: const EdgeInsets.only(top: 10, bottom: 10, left: 10, right: 10),
-        padding:
-            const EdgeInsets.only(top: 13, bottom: 15, right: 15, left: 15),
+        padding: const EdgeInsets.only(top: 13, bottom: 0, right: 15, left: 15),
         decoration: BoxDecoration(
             boxShadow: [
               BoxShadow(
@@ -82,6 +82,22 @@ class _BlockPostState extends State<BlockPost> {
               borderRadius: const BorderRadius.all(Radius.circular(3)),
               child: Image.network(
                   "https://aden.anytion.com/public/posts/${widget.item["post_img"]}"),
+            ),
+            Container(
+              margin: const EdgeInsets.only(top: 10),
+              padding: const EdgeInsets.only(top: 0),
+              decoration: const BoxDecoration(
+                  border:
+                      Border(top: BorderSide(color: Colors.black38, width: 1))),
+              child: Row(
+                children: [
+                  IconButton(
+                      onPressed: () {}, icon: const Icon(CupertinoIcons.heart)),
+                  IconButton(
+                      onPressed: () {},
+                      icon: const Icon(CupertinoIcons.chat_bubble))
+                ],
+              ),
             )
           ],
         ));

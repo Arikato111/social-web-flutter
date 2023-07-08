@@ -14,11 +14,12 @@ class _BottomNavigatorState extends State<BottomNavigator> {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+        type: BottomNavigationBarType.shifting,
         unselectedIconTheme: const IconThemeData(color: Colors.black45),
         currentIndex: widget.currentIndex,
         onTap: widget.onTap,
         fixedColor: Colors.blue,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.red,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -38,7 +39,7 @@ class _BottomNavigatorState extends State<BottomNavigator> {
               icon: Icon(
                 Icons.person,
               ),
-              label: 'Home'),
+              label: 'Peoples'),
         ]);
   }
 }

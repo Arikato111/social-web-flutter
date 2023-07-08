@@ -46,19 +46,16 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        // color: Colors.white,
-        color: const Color(0xF2F0F2F0),
-        child: SingleChildScrollView(
-            // check loading state
-            child: isLoading < 1
-                ? LoadingState(
-                    fetchApi: fetchApi,
-                    isLoading: isLoading,
-                  )
-                : PostDisplay(
-                    data: data,
-                    users: users,
-                  )));
+    return SingleChildScrollView(
+        // check loading state
+        child: isLoading < 1
+            ? LoadingState(
+                fetchApi: fetchApi,
+                isLoading: isLoading,
+              )
+            : PostDisplay(
+                data: data,
+                users: users,
+              ));
   }
 }

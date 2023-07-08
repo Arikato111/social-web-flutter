@@ -12,7 +12,7 @@ AppBar topBar(context) {
               },
               child: const Text(
                 "aden",
-                style: TextStyle(color: Colors.blue),
+                style: TextStyle(color: Colors.blue, fontSize: 24),
               )),
         ],
       ));

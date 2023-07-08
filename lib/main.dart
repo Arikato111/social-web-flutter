@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'pages/home.dart';
-import './pages/about.dart';
 import 'package:flutterapp/components/bottom_navigator.dart';
-import '../components/top_bar.dart';
+import './pages/explore.dart';
+import './components/top_bar.dart';
+import './pages/search.dart';
+import './pages/peoples.dart';
 
 void main() {
   return runApp(const MyApp());
@@ -31,13 +33,9 @@ class _RoutingState extends State<Routing> {
   // page at here
   static const List<Widget> _widgetOptions = <Widget>[
     Home(),
-    Text(
-      'Index 1: Business',
-    ),
-    Text(
-      'Index 2: School',
-    ),
-    Text('Index 3: Person')
+    ExplorePage(),
+    SearchPage(),
+    PeoplePage()
   ];
 
   void _onItemTapped(int index) {
@@ -50,6 +48,7 @@ class _RoutingState extends State<Routing> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: topBar(context),
+        backgroundColor: const Color(0xF2F0F2F0),
         body: _widgetOptions.elementAt(_selectedIndex),
         bottomNavigationBar: BottomNavigator(
           currentIndex: _selectedIndex,
