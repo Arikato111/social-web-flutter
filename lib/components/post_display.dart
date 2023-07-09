@@ -68,7 +68,16 @@ class _BlockPostState extends State<BlockPost> {
                             "https://aden.anytion.com/public/profile/${widget.user["usr_img"]}"),
                       ),
                     ),
-                    Text("${widget.user["usr_name"]}"),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("${widget.user["usr_name"]}"),
+                        Text(
+                          "${widget.item["post_date"]}",
+                          style: const TextStyle(fontSize: 10),
+                        ),
+                      ],
+                    )
                   ],
                 )),
             Container(

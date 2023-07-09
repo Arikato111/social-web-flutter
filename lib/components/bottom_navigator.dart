@@ -39,7 +39,7 @@ class _BottomNavigatorState extends State<BottomNavigator> {
               icon: Icon(
                 Icons.person,
               ),
-              label: 'Peoples'),
+              label: 'People'),
         ]);
   }
 }
