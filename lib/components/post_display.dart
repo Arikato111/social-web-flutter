@@ -40,12 +40,12 @@ class _BlockPostState extends State<BlockPost> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.only(top: 10, bottom: 10, left: 10, right: 10),
+        margin: const EdgeInsets.only(top: 0, bottom: 10, left: 10, right: 10),
         padding: const EdgeInsets.only(top: 13, bottom: 0, right: 15, left: 15),
         decoration: BoxDecoration(
             boxShadow: [
               BoxShadow(
-                  color: Colors.grey.withOpacity(0.2),
+                  color: Colors.grey.withOpacity(0.1),
                   spreadRadius: 5,
                   blurRadius: 7,
                   offset: const Offset(0, 3))

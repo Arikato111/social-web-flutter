@@ -20,9 +20,9 @@ class _BoxShadowComponentState extends State<BoxShadowComponent> {
       decoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-                color: Colors.grey.withOpacity(0.2),
-                spreadRadius: 5,
-                blurRadius: 7,
+                color: Colors.grey.withOpacity(0.1),
+                spreadRadius: 3,
+                blurRadius: 5,
                 offset: const Offset(0, 3))
           ],
           // border: Border.all(color: Colors.black),

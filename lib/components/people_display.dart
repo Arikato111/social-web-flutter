@@ -48,7 +48,7 @@ class _PeopleBoxState extends State<PeopleBox> {
   Widget build(BuildContext context) {
     return BoxShadowComponent(
       padding: const EdgeInsets.only(top: 13, bottom: 13, right: 15, left: 15),
-      margin: const EdgeInsets.only(top: 10, bottom: 0, left: 10, right: 10),
+      margin: const EdgeInsets.only(top: 7, bottom: 0, left: 10, right: 10),
       child: Column(children: [
         Container(
             alignment: Alignment.topLeft,

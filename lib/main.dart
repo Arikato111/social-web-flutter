@@ -48,7 +48,7 @@ class _RoutingState extends State<Routing> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: topBar(context),
-        backgroundColor: const Color.fromARGB(240, 245, 245, 245),
+        backgroundColor: const Color.fromARGB(240, 255, 255, 255),
         body: _widgetOptions.elementAt(_selectedIndex),
         bottomNavigationBar: BottomNavigator(
           currentIndex: _selectedIndex,
